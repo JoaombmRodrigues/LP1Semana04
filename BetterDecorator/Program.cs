@@ -1,7 +1,10 @@
 ﻿using System;
 
 namespace BetterDecorator
-{
+{   /// <summary>
+    /// Program that receives 3 args (string, char and int) and prints the
+    /// string with the chars at the beginning and end an int amount of times
+    /// </summary>
     class Program
 
     {
