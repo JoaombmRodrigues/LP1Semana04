@@ -14,10 +14,16 @@ namespace BetterDecorator
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
-        {
+        {   if (args.Length != 3)
+            {
+                Console.WriteLine(Decor());
+            }
+            else
+            {
             char c = char.Parse(args[1]);
             int qnt = int.Parse(args[2]);
-            Console.WriteLine(Decor(args[0],c,qnt));
+            Console.WriteLine(Decor(args[0],c,qnt));  
+            }
         }
         /// <summary>
         /// Method that receives a string, char and int and repeats the char an
@@ -41,6 +47,11 @@ namespace BetterDecorator
             }
             return $"{charleft} {s} {charright}"; 
         }  
+
+        private static string Decor()
+        {
+            return (Decor("User did not specify args!", '=', 3));
+        }
     
     }
 }
