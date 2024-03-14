@@ -5,14 +5,25 @@ namespace BetterDecorator
     class Program
 
     {
-
+        /// <summary>
+        /// Converts given args from strings to char and int and prints
+        /// 'Decor' method
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             char c = char.Parse(args[1]);
             int qnt = int.Parse(args[2]);
             Console.WriteLine(Decor(args[0],c,qnt));
         }
-
+        /// <summary>
+        /// Method that receives a string, char and int and repeats the char an
+        /// int amount of times at the start and end of the string
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="dec"></param>
+        /// <param name="i"></param>
+        /// <returns></returns>
         private static string Decor(string s, char dec,int i)
         {
             string charleft = "";
