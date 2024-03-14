@@ -48,6 +48,10 @@ namespace BetterDecorator
             return $"{charleft} {s} {charright}"; 
         }  
 
+        /// <summary>
+        /// Method used when given less than 3 args
+        /// </summary>
+        /// <returns></returns>
         private static string Decor()
         {
             return (Decor("User did not specify args!", '=', 3));
